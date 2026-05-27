@@ -4,27 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Your Wedding Advisor | Dream Weddings, Luxury Ideas & Smart Planning</title>
+  <title>Your Wedding Advisor | Coming Soon</title>
 
-  <meta name="description" content="Your Wedding Advisor helps couples discover dream wedding inspiration, luxury ideas, curated wedding picks, planning tools and vendor opportunities." />
+  <meta name="description" content="Your Wedding Advisor is preparing a new global wedding inspiration platform. In the meantime, explore our online projects and advertising opportunities." />
 
   <meta property="og:title" content="Your Wedding Advisor" />
-  <meta property="og:description" content="Dream wedding inspiration, luxury ideas, curated picks and smart planning tools for modern couples." />
+  <meta property="og:description" content="A new global wedding inspiration platform is coming soon. Explore our online projects, partnerships and advertising opportunities." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourweddingadvisor.com/" />
 
   <style>
     :root {
-      --ivory: #faf7f1;
+      --bg: #f3f6fa;
       --white: #ffffff;
-      --charcoal: #172033;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --rose: #c8a29a;
-      --champagne: #d9c3a5;
-      --sage: #6f8c7a;
-      --gold: #b99154;
-      --border: #e7dccf;
+      --text: #111827;
+      --muted: #374151;
+      --dark: #0f172a;
+      --blue: #005fd6;
+      --orange: #ff8200;
+      --border: #dbe3ef;
+      --cream: #fff3e3;
     }
 
     * {
@@ -34,7 +33,7 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--ivory);
+      background: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
@@ -45,202 +44,113 @@
     }
 
     .page {
-      max-width: 1180px;
+      max-width: 1220px;
       margin: 0 auto;
       padding: 24px;
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 0 28px;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      color: var(--charcoal);
-      letter-spacing: -0.5px;
-    }
-
-    nav {
-      display: flex;
-      gap: 22px;
-      font-size: 15px;
-      color: var(--charcoal);
-    }
-
-    nav a:hover {
-      color: var(--gold);
-    }
-
     .hero {
-      background:
-        linear-gradient(135deg, rgba(23, 32, 51, 0.82), rgba(200, 162, 154, 0.55)),
-        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80");
-      background-size: cover;
-      background-position: center;
-      border-radius: 34px;
-      min-height: 430px;
-      padding: 70px 54px;
-      color: white;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 30px 80px rgba(23, 32, 51, 0.22);
+      background: linear-gradient(135deg, #fff8ee, #ffffff);
+      border-radius: 28px;
+      padding: 48px 34px;
+      text-align: center;
+      box-shadow: 0 20px 55px rgba(17, 24, 39, 0.08);
+      margin-bottom: 34px;
     }
 
-    .hero-content {
-      max-width: 690px;
-    }
-
-    .eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 13px;
-      font-weight: 700;
-      color: #f5e7d6;
-      margin-bottom: 16px;
-    }
-
-    h1 {
+    .hero h1 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(42px, 7vw, 76px);
-      line-height: 1.02;
-      margin: 0 0 22px;
-      letter-spacing: -1.5px;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      color: #172033;
     }
 
     .hero p {
+      max-width: 850px;
+      margin: 0 auto;
       font-size: 20px;
-      max-width: 620px;
-      margin: 0 0 30px;
-      color: #fff7ee;
+      color: var(--muted);
     }
 
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 24px;
+    .badge {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 12px 24px;
       border-radius: 999px;
-      font-weight: 700;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: white;
-      color: var(--charcoal);
-    }
-
-    .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.75);
+      background: var(--dark);
       color: white;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
+      font-weight: 800;
     }
 
     .section {
-      margin-top: 56px;
       background: var(--white);
-      border-radius: 30px;
-      padding: 36px;
-      box-shadow: 0 20px 60px rgba(23, 32, 51, 0.08);
+      border-radius: 28px;
+      padding: 34px;
+      margin-bottom: 28px;
+      box-shadow: 0 18px 50px rgba(17, 24, 39, 0.08);
     }
 
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .section-title span {
-      width: 5px;
-      height: 34px;
-      background: var(--rose);
-      border-radius: 10px;
-    }
-
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 34px;
-      line-height: 1.15;
-      margin: 0;
-      color: var(--charcoal);
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 32px;
+      color: #061226;
+      border-left: 5px solid var(--orange);
+      padding-left: 14px;
     }
 
     .section-intro {
-      max-width: 820px;
-      margin: 0 0 28px;
-      color: #374151;
+      margin: 0;
+      max-width: 850px;
       font-size: 18px;
+      color: var(--muted);
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
+      margin-top: 30px;
     }
 
     .card {
-      overflow: hidden;
-      border-radius: 24px;
-      background: #fff;
       border: 1px solid var(--border);
-      box-shadow: 0 12px 35px rgba(23, 32, 51, 0.06);
-      transition: 0.22s ease;
+      border-radius: 24px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+      transition: 0.2s ease;
     }
 
     .card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 20px 50px rgba(23, 32, 51, 0.12);
+      box-shadow: 0 20px 45px rgba(17, 24, 39, 0.12);
     }
 
     .card-top {
-      min-height: 160px;
-      padding: 30px;
+      height: 165px;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 26px;
       text-align: center;
       color: white;
-      font-size: 27px;
+      font-size: 28px;
       font-weight: 900;
       line-height: 1.1;
+      letter-spacing: -0.3px;
     }
 
-    .dream {
-      background: linear-gradient(135deg, #6d2f48, #d1a37f);
+    .ma {
+      background: linear-gradient(135deg, #0f1f3a, #0f5bd3);
     }
 
-    .luxury {
-      background: linear-gradient(135deg, #172033, #b99154);
+    .fargo {
+      background: linear-gradient(135deg, #16823e, #22b85f);
     }
 
-    .style {
-      background: linear-gradient(135deg, #9f3154, #e9b7a5);
-    }
-
-    .shop {
-      background: linear-gradient(135deg, #2c4a3e, #9bbf9a);
-    }
-
-    .planner {
-      background: linear-gradient(135deg, #314b7c, #c8a29a);
-    }
-
-    .vendor {
-      background: linear-gradient(135deg, #111827, #6f8c7a);
+    .kooham {
+      background: linear-gradient(135deg, #b3123f, #f23d63);
     }
 
     .card-body {
@@ -249,76 +159,96 @@
 
     .card-body h3 {
       margin: 0 0 8px;
-      font-size: 22px;
-      color: var(--charcoal);
+      font-size: 24px;
+      color: #111827;
     }
 
     .card-body p {
       margin: 0 0 18px;
+      font-size: 17px;
       color: #374151;
     }
 
-    .card-link {
-      color: var(--gold);
+    .card-body a {
+      color: #005fd6;
       font-weight: 800;
     }
 
+    .ad-box {
+      border: 2px dashed var(--orange);
+      background: var(--cream);
+      border-radius: 24px;
+      padding: 76px 30px;
+      text-align: center;
+      margin-top: 34px;
+    }
+
+    .ad-box h2 {
+      border: 0;
+      padding: 0;
+      margin: 0 0 10px;
+      color: var(--blue);
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .ad-box p {
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 22px;
+      margin: 0;
+    }
+
     .banner {
-      margin-top: 36px;
-      border-radius: 28px;
-      padding: 38px;
-      background: var(--charcoal);
+      background: var(--dark);
       color: white;
+      border-radius: 28px;
+      padding: 34px;
       display: flex;
-      gap: 24px;
       justify-content: space-between;
       align-items: center;
+      gap: 26px;
+      box-shadow: 0 18px 50px rgba(17, 24, 39, 0.12);
     }
 
     .banner h2 {
+      margin: 0 0 8px;
       color: white;
-      margin-bottom: 10px;
+      font-size: 30px;
     }
 
     .banner p {
       margin: 0;
       color: #e5e7eb;
-      font-size: 17px;
+      font-size: 18px;
     }
 
-    .banner .btn {
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       background: white;
-      color: var(--charcoal);
-      flex-shrink: 0;
-    }
-
-    .disclosure {
-      margin-top: 28px;
-      font-size: 13px;
-      color: var(--muted);
+      color: #111827;
+      border-radius: 999px;
+      padding: 14px 24px;
+      font-weight: 800;
+      white-space: nowrap;
     }
 
     footer {
-      padding: 42px 0 20px;
       text-align: center;
-      color: var(--muted);
+      color: #6b7280;
+      padding: 32px 0 10px;
       font-size: 14px;
     }
 
     @media (max-width: 900px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-      }
-
-      nav {
-        flex-wrap: wrap;
+      .page {
+        padding: 16px;
       }
 
       .hero {
-        padding: 50px 28px;
-        border-radius: 26px;
+        padding: 40px 24px;
       }
 
       .cards {
@@ -330,8 +260,12 @@
         align-items: flex-start;
       }
 
-      .section {
-        padding: 26px;
+      .ad-box {
+        padding: 54px 22px;
+      }
+
+      .ad-box p {
+        font-size: 19px;
       }
     }
   </style>
@@ -339,170 +273,83 @@
 
 <body>
   <div class="page">
-    <header>
-      <a class="logo" href="/">Your Wedding Advisor</a>
-      <nav>
-        <a href="#dream">Dream Weddings</a>
-        <a href="#shop">Shop the Look</a>
-        <a href="#planning">Planning</a>
-        <a href="#vendors">For Vendors</a>
-      </nav>
+
+    <header class="hero">
+      <h1>Your Wedding Advisor</h1>
+      <p>
+        A new global wedding inspiration platform is coming soon — focused on dream weddings,
+        luxury ideas, curated wedding picks, planning tools and future vendor listings.
+      </p>
+      <div class="badge">Coming soon</div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="eyebrow">Dream first. Plan smart.</div>
-          <h1>Your Dream Wedding Starts Here</h1>
-          <p>
-            Luxury wedding inspiration, elegant ideas, curated picks and practical planning tools
-            for couples who want a celebration that feels unforgettable.
-          </p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#dream">Explore Dream Weddings</a>
-            <a class="btn btn-secondary" href="#vendors">For Wedding Vendors</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="dream">
-        <div class="section-title">
-          <span></span>
-          <h2>Dream Wedding Inspiration</h2>
-        </div>
+      <section class="section">
+        <h2>Useful Links & Recommendations</h2>
         <p class="section-intro">
-          Start with the vision: luxury looks, glamorous details, romantic ideas and unforgettable
-          wedding inspiration before the planning begins.
+          While Your Wedding Advisor is being prepared, you can explore our other online projects,
+          partner spaces and useful recommendations.
         </p>
 
         <div class="cards">
+
           <article class="card">
-            <div class="card-top dream">Dream Wedding<br>Ideas</div>
+            <div class="card-top ma">
+              MetaAdvisor<br>AI • Crypto • Tech
+            </div>
             <div class="card-body">
-              <h3>Dream Weddings</h3>
-              <p>Inspiration for couples who want a wedding that feels personal, beautiful and unforgettable.</p>
-              <a class="card-link" href="#">Coming soon →</a>
+              <h3>MetaAdvisor</h3>
+              <p>AI, crypto and technology topics explained in a clear and practical way.</p>
+              <a href="https://metaadvisor.eu/" target="_blank" rel="noopener">Visit MetaAdvisor →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-top luxury">Luxury Wedding<br>Inspiration</div>
+            <div class="card-top fargo">
+              Far-Go<br>Travel Ideas
+            </div>
             <div class="card-body">
-              <h3>Luxury Weddings</h3>
-              <p>Elegant details, premium aesthetics, statement decor and high-end wedding inspiration.</p>
-              <a class="card-link" href="#">Coming soon →</a>
+              <h3>Far-Go</h3>
+              <p>Travel ideas, destinations and practical tourism information for curious travelers.</p>
+              <a href="https://far-go.com/" target="_blank" rel="noopener">Visit Far-Go →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card-top style">Bridal Style<br>& Glamour</div>
+            <div class="card-top kooham">
+              Koo-Ham<br>Recipes & Ideas
+            </div>
             <div class="card-body">
-              <h3>Bridal Style</h3>
-              <p>Dresses, shoes, jewelry, beauty ideas and glamorous finishing touches for the big day.</p>
-              <a class="card-link" href="#">Coming soon →</a>
+              <h3>Koo-Ham</h3>
+              <p>Simple recipes, cooking ideas and everyday food inspiration.</p>
+              <a href="https://koo-ham.com/" target="_blank" rel="noopener">Visit Koo-Ham →</a>
             </div>
           </article>
+
+        </div>
+
+        <div class="ad-box">
+          <h2>🚀 This Could Be Your Banner</h2>
+          <p>Contact us for partnership opportunities, banner placements or sponsored positions.</p>
         </div>
       </section>
 
-      <section class="section" id="shop">
-        <div class="section-title">
-          <span></span>
-          <h2>Shop the Wedding Look</h2>
-        </div>
-        <p class="section-intro">
-          Curated wedding picks for decor, invitations, bridal accessories, bridesmaid gifts and honeymoon essentials.
-        </p>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-top shop">Elegant<br>Wedding Decor</div>
-            <div class="card-body">
-              <h3>Wedding Decor</h3>
-              <p>Stylish decor ideas that help create a polished, romantic and memorable wedding atmosphere.</p>
-              <a class="card-link" href="#">Explore picks →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top luxury">Invitations<br>& Details</div>
-            <div class="card-body">
-              <h3>Luxury Invitations</h3>
-              <p>Beautiful stationery, invitation suites, guest books and personalized wedding details.</p>
-              <a class="card-link" href="#">Explore picks →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top dream">Honeymoon<br>Essentials</div>
-            <div class="card-body">
-              <h3>Honeymoon Style</h3>
-              <p>Travel accessories, romantic escape ideas and elegant honeymoon essentials for couples.</p>
-              <a class="card-link" href="#">Explore picks →</a>
-            </div>
-          </article>
-        </div>
-
-        <p class="disclosure">
-          Disclosure: This website may contain affiliate links. If you buy through these links, we may earn a commission at no extra cost to you.
-        </p>
-      </section>
-
-      <section class="section" id="planning">
-        <div class="section-title">
-          <span></span>
-          <h2>Plan the Dream</h2>
-        </div>
-        <p class="section-intro">
-          After the inspiration comes the planning: checklists, budget tools, vendor questions and practical guides
-          to turn the dream into a real wedding plan.
-        </p>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-top planner">Wedding<br>Checklist</div>
-            <div class="card-body">
-              <h3>Planning Checklist</h3>
-              <p>A simple step-by-step wedding planning checklist for couples starting from zero.</p>
-              <a class="card-link" href="#">Coming soon →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top planner">Budget<br>Calculator</div>
-            <div class="card-body">
-              <h3>Budget Calculator</h3>
-              <p>A practical tool to estimate wedding costs after you define your dream wedding style.</p>
-              <a class="card-link" href="#">Coming soon →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top planner">Vendor<br>Questions</div>
-            <div class="card-body">
-              <h3>Vendor Guide</h3>
-              <p>Questions to ask photographers, venues, florists, planners and other wedding professionals.</p>
-              <a class="card-link" href="#">Coming soon →</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="banner" id="vendors">
+      <section class="banner">
         <div>
-          <h2>Advertising & Vendor Listings</h2>
+          <h2>Advertising & Partnerships</h2>
           <p>
-            Are you a wedding vendor, bridal brand, photographer, venue, florist, planner or invitation studio?
-            Submit your business for future listing, partnership and sponsored placement opportunities.
+            For partnership links, banners, sponsored placements, informational campaigns
+            or future wedding vendor listings, send us an inquiry.
           </p>
         </div>
-        <a class="btn" href="mailto:hello@yourweddingadvisor.com?subject=Vendor%20Listing%20Inquiry">Submit Inquiry</a>
+        <a class="button" href="mailto:hello@yourweddingadvisor.com?subject=Partnership%20Inquiry">Send Inquiry</a>
       </section>
     </main>
 
     <footer>
-      © 2026 Your Wedding Advisor. Dream wedding inspiration, curated picks and smart planning tools.
+      © 2026 Your Wedding Advisor. Dream wedding inspiration, curated online projects and future vendor opportunities.
     </footer>
+
   </div>
 </body>
 </html>
